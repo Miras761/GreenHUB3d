@@ -4,7 +4,6 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { MongoMemoryServer } from 'mongodb-memory-server';
 import authRoutes from './routes/auth.js';
 import userRoutes from './routes/users.js';
 import modelRoutes from './routes/models.js';
@@ -61,6 +60,7 @@ const startServer = async () => {
       }
     } else {
       console.log('Running in development mode');
+      const { MongoMemoryServer } = await import('mongodb-memory-server');
       const mongoServer = await MongoMemoryServer.create();
       mongoUri = mongoServer.getUri();
       console.log('In-memory MongoDB started');
