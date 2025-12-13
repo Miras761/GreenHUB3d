@@ -1,0 +1,153 @@
+.home-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 40px 0;
+}
+
+.home-header h1 {
+  font-size: 48px;
+  color: #4ade80;
+  margin-bottom: 10px;
+}
+
+.home-header p {
+  font-size: 18px;
+  color: #999;
+  margin-bottom: 30px;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 20px;
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+  color: #e0e0e0;
+  font-size: 16px;
+}
+
+.search-input:focus {
+  border-color: #4ade80;
+  outline: none;
+}
+
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.category-btn {
+  padding: 8px 16px;
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 20px;
+  color: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+  border-color: #4ade80;
+  color: #4ade80;
+}
+
+.category-btn.active {
+  background-color: #4ade80;
+  border-color: #4ade80;
+  color: #0a0a0a;
+}
+
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.model-card {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.model-card:hover {
+  border-color: #4ade80;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(74, 222, 128, 0.1);
+}
+
+.model-thumbnail {
+  width: 100%;
+  height: 200px;
+  background-color: #0f0f0f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.model-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.model-placeholder {
+  font-size: 48px;
+  color: #333;
+}
+
+.model-info {
+  padding: 16px;
+}
+
+.model-info h3 {
+  margin-bottom: 8px;
+  color: #e0e0e0;
+  font-size: 18px;
+}
+
+.model-author {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.model-stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #999;
+}
+
+.model-license {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #2a2a2a;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #4ade80;
+  margin-top: 8px;
+}
+
+.loading,
+.no-models {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 18px;
+}
